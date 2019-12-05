@@ -1,0 +1,26 @@
+{
+  "name": "Project-2",
+  "version": "1.0.0",
+  "description": "Soccer Web-Based Application Members: Wismy &amp; Alex",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rocha8524/Project-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rocha8524/Project-2/issues"
+  },
+  "homepage": "https://github.com/Rocha8524/Project-2#readme"
+}
