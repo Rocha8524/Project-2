@@ -1,10 +1,9 @@
 // Create variables that connect npm packages
-var mysql = require("mysql");
-var inquirer = require("inquirer");
-require("console.table");
+// var mysql = require("mysql");
+// var inquirer = require("inquirer");
 
 // Create the connection information for the sql database
-var connection = mysql.createConnection({
+/* var connection = mysql.createConnection({
     host: "localhost",
 
     // Your port; if not 3306
@@ -19,116 +18,117 @@ var connection = mysql.createConnection({
     // Connects to the database used in MySQL
     database: "players_db"
 });
-
+*/
 // Include football data npm package
 const data = require("footballdata-api-v2");
 const FootballData = data.default;
 
 const footballData = new FootballData("f500a2871e0e423d9fe1ba869f73155e");
 
-// Connect to the mysql server and sql database
+/* Connect to the mysql server and sql database
 connection.connect(function (error) {
     if (error) throw error;
     teamInquirer();
 });
-
-/* Store all arguments in an array
-var commands = process.argv[2];
-var userInput = process.argv.slice(3).join(" ");
 */
 
-function teamInquirer() {
+//Store all arguments in an array
+var commands = process.argv[2];
+//var userInput = process.argv.slice(3).join(" ");
+
+
+/*function teamInquirer() {
     inquirer.prompt([{
         name: "teams",
         type: "list",
         message: "Choose a team you wish to look at:",
         choices: ["Liverpool FC", "Leicester City FC", "Manchester City FC", "Chelsea FC", "Tottenham Hotspur FC", "Manchester United FC", "Crystal Palace FC", "Arsenal FC", "Newcastle United FC", "West Ham United FC", "Southampton FC", "Sheffield United FC", "Norwich City", "Watford FC", "Aston Villa FC", "AFC Bournemouth", "Everton FC", "Burnley FC", "Brighton & Hove Albion FC", "Wolverhampton Wanderers FC"]
 
-    }]).then(function (answer) {
-        switch (answer.teams) {
+    }]).then(function (answer) {*/
+switch (commands) {
 
-            case "liverpool":
-                liverpool();
-                break;
+    case "liverpool":
+        liverpool();
+        break;
 
-            case "leicester":
-                leicesterCity();
-                break;
+    case "leicester":
+        leicesterCity();
+        break;
 
-            case "man-city":
-                manCity();
-                break;
+    case "man-city":
+        manCity();
+        break;
 
-            case "chelsea":
-                chelsea();
-                break;
+    case "chelsea":
+        chelsea();
+        break;
 
-            case "man-utd":
-                manUtd();
-                break;
+    case "man-utd":
+        manUtd();
+        break;
 
-            case "tottenham":
-                tottenham();
-                break;
+    case "tottenham":
+        tottenham();
+        break;
 
-            case "wolves":
-                wolves();
-                break;
+    case "wolves":
+        wolves();
+        break;
 
-            case "crystal-palace":
-                crystal();
-                break;
+    case "crystal-palace":
+        crystal();
+        break;
 
-            case "sheffield":
-                sheffield();
-                break;
+    case "sheffield":
+        sheffield();
+        break;
 
-            case "arsenal":
-                arsenal();
-                break;
+    case "arsenal":
+        arsenal();
+        break;
 
-            case "newcastle":
-                newcastle();
-                break;
+    case "newcastle":
+        newcastle();
+        break;
 
-            case "brighton":
-                brighton();
-                break;
+    case "brighton":
+        brighton();
+        break;
 
-            case "burnley":
-                burnley();
-                break;
+    case "burnley":
+        burnley();
+        break;
 
-            case "everton":
-                everton();
-                break;
+    case "everton":
+        everton();
+        break;
 
-            case "bournemouth":
-                bournemouth();
-                break;
+    case "bournemouth":
+        bournemouth();
+        break;
 
-            case "west-ham":
-                westHam();
-                break;
+    case "west-ham":
+        westHam();
+        break;
 
-            case "aston-villa":
-                astonVilla();
-                break;
+    case "aston-villa":
+        astonVilla();
+        break;
 
-            case "southampton":
-                southampton();
-                break;
+    case "southampton":
+        southampton();
+        break;
 
-            case "norwich":
-                norwich();
-                break;
+    case "norwich":
+        norwich();
+        break;
 
-            case "watford":
-                watford();
-                break;
-        }
-    });
-};
+    case "watford":
+        watford();
+        break;
+}
+//});
+//};
 
 function liverpool() {
 
