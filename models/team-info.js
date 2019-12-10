@@ -1,18 +1,18 @@
 // Include football data npm package
 var data = require("footballdata-api-v2");
 var FootballData = data.default;
+
 var footballData = new FootballData("f500a2871e0e423d9fe1ba869f73155e");
-var logTeamInfo = [];
 
 footballData
   .getTeamsFromCompetition({
     competitionId: 2021
   })
   .then(function(data) {
-    console.log(data.teams);
+    console.log(JSON.stringify(data.teams, null, 4));
 
     // Log information into teams-info html
-    logTeamInfo.push = JSON.stringify(data.teams, null, 4);
+    var logTeamInfo = JSON.stringify(data.teams, null, 4);
 
     output.innerHTML = JSON.stringify(logTeamInfo);
   });
@@ -30,7 +30,7 @@ footballData
         .then(function (data) {
           //console.log(JSON.stringify(data.teams, null, 4));
           console.log(data);
-
+    
           var { teams: [{ table: tableData }] } = data;
           var rowDataHTML = tableData.reduce(
             (html, name, crestUrl, address, website, founded, venue ) =>
