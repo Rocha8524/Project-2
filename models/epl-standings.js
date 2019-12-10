@@ -1,18 +1,29 @@
-// Include football data npm package
-var data = require("footballdata-api-v2");
-var FootballData = data.default;
-
-var footballData = new FootballData("f500a2871e0e423d9fe1ba869f73155e");
-
-// Store all arguments in an array
-var commands = process.argv[2];
-var userInput = process.argv.slice(3).join(" ");
-
-footballData
-  .getStandingsFromCompetition({
-    competitionId: 2021,
-    standingType: "TOTAL"
+$(document).ready(function () {
+  const url = "https://api.football-data.org/v2/competitions/2021/standings";
+  fetch(url, {
+    method: "GET",
+    headers: {
+      "X-Auth-Token": "f500a2871e0e423d9fe1ba869f73155e"
+    }
   })
-  .then(function(data) {
-    console.log(JSON.stringify(data.standings, null, 4));
-  });
+    .then(resp => resp.json())
+    .then(function (data) {
+      console.log(data);
+      var { standings: [{ table: tableData }] } = data;
+      var rowDataHTML = tableData.reduce(
+        (html, { team: { name }, playedGames, won, draw, lost, goalsFor, goalsAgainst, goalDifference, points }) =>
+          html += `<tr>
+        <td>${name}</td>
+        <td>${playedGames}</td>
+        <td>${won}</td>
+        <td>${draw}</td>
+        <td>${lost}</td>
+        <td>${goalsFor}</td>
+        <td>${goalsAgainst}</td>
+        <td>${goalDifference}</td>
+        <td>${points}</td>
+        </tr>
+        `, "");
+      document.getElementById("table").innerHTML += rowDataHTML
+    });
+});
