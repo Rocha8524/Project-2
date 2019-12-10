@@ -1,10 +1,33 @@
 body {
-    background-color: black;
+  background-color: black;
   }
-
+  
   .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+  
+  .bg {
+  background-image: url("images/eplbackground2.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+  #table {
+  color: white;
+  font-weight: bold;
+  }
+    
+  tr {
+  border-bottom: 1px solid purple;
+  }
+  
+  th {
+  color: ivory;
+  font-size: 18px;
+  border-bottom: 3px solid purple;
   }
