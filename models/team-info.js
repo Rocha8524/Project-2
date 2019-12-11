@@ -26,14 +26,14 @@ $(document).ready(function() {
         console.log(response);
         $.each(response.teams, function(i, team) {
           $teams.append(
-            `<br><div class="text-center"><img width="50" height="50" src="${team.crestUrl}"></div>
+            `<br><div class="text-center"><img width="50" height="50" src="${team.crestUrl}"></div><br>
             <div class="center">${team.name} </div>
-            <div class="center">${team.area.name}</div>
-            <div class="center">${team.founded}</div>
-            <div class="center">${team.venue}</div>
-            <div class="center"><a href="${team.website}" target="_blank">${team.website}</a></div>
+            <div class="center">Founded: ${team.founded}</div>
+            <div class="center">Stadium: ${team.venue}</div>
+            <div class="center">Website: <a href="${team.website}" target="_blank">${team.website}</a></div>
+            <div class="center">Address: ${team.address}</div>
             <div class="card-action right-align">
-            <a class="waves-effect waves-light btn red" onclick="deleteTeamListener(${team.id})"><i class="material-icons right"></i>Delete from Favorite</a>
+            <a class="waves-effect waves-light btn red" onclick="deleteTeamListener(${team.id})"><i class="material-icons right"></i>Click for Favorite</a>
             </div><hr>
         </div>
         </div>`
