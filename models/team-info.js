@@ -1,5 +1,5 @@
 // Include football data npm package
-
+/*
 var data = require("footballdata-api-v2");
 var FootballData = data.default;
 
@@ -9,67 +9,37 @@ footballData
   .getTeamsFromCompetition({
     competitionId: 2021
   })
-  .then(function(data) {
+  .then(function (data) {
     console.log(JSON.stringify(data.teams, null, 4));
   });
-
-/*
-$(function() {
-  var $teams = $("#team-info");
-  $.ajax({
-    headers: { "X-Auth-Token": "f500a2871e0e423d9fe1ba869f73155e" },
-    url: "http://api.football-data.org/v2/competitions/2021/teams",
-    dataType: "json",
-    type: "GET",
-    success: function(response) {
-      $.each(response.teams, function(i, team) {
-        $teams.append(
-          "<li>Name: " +
-            team.name +
-            ", Crest: " +
-            team.crestUrl +
-            ", Founded: " +
-            team.founded +
-            ", Stadium: " +
-            team.venue +
-            ", Website: " +
-            team.website +
-            "</li>"
-        );
-      });
-    }
-  });
-});
 */
 
-/*
-$(document).ready(function () {
-const url = "https://api.football-data.org/v2/competitions/2021/teams";
-fetch(url, {
-  method: "GET",
-  headers: {
-    "X-Auth-Token": "f500a2871e0e423d9fe1ba869f73155e"
-  }
-})
-  .then(resp => resp.json())
-  .then(function (data) {
-    console.log(data);
-    var { standings: [{ table: tableData }] } = data;
-    var rowDataHTML = tableData.reduce(
-      (html, { team: { name }, playedGames, won, draw, lost, goalsFor, goalsAgainst, goalDifference, points }) =>
-        html += `<tr>
-          <td>${name}</td>
-          <td>${playedGames}</td>
-          <td>${won}</td>
-          <td>${draw}</td>
-          <td>${lost}</td>
-          <td>${goalsFor}</td>
-          <td>${goalsAgainst}</td>
-          <td>${goalDifference}</td>
-          <td>${points}</td>
-          </tr>
-          `, "");
-    document.getElementById("table").innerHTML += rowDataHTML
+$(document).ready(function() {
+  $(function() {
+    var $teams = $("#team-info");
+    $.ajax({
+      headers: { "X-Auth-Token": "f500a2871e0e423d9fe1ba869f73155e" },
+      url: "http://api.football-data.org/v2/competitions/2021/teams",
+      dataType: "json",
+      type: "GET",
+      success: function(response) {
+        console.log(response);
+        $.each(response.teams, function(i, team) {
+          $teams.append(
+            `<div class="center"><img width="50" height="50" src="${team.crestUrl}"></div>
+            <div class="center">${team.name} </div>
+            <div class="center">${team.area.name}</div>
+            <div class="center">${team.founded}</div>
+            <div class="center">${team.venue}</div>
+            <div class="center"><a href="${team.website}" target="_blank">${team.website}</a></div>
+            <div class="card-action right-align">
+            <a class="waves-effect waves-light btn red" onclick="deleteTeamListener(${team.id})"><i class="material-icons right"></i>Delete from Favorite</a>
+            </div><hr>
+        </div>
+        </div>`
+          );
+        });
+      }
+    });
   });
 });
-*/
