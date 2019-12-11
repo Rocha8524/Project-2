@@ -26,7 +26,7 @@ $(document).ready(function() {
         console.log(response);
         $.each(response.teams, function(i, team) {
           $teams.append(
-            `<div class="center"><img width="50" height="50" src="${team.crestUrl}"></div>
+            `<br><div class="text-center"><img width="50" height="50" src="${team.crestUrl}"></div>
             <div class="center">${team.name} </div>
             <div class="center">${team.area.name}</div>
             <div class="center">${team.founded}</div>
