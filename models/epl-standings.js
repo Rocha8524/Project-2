@@ -6,14 +6,17 @@ $(document).ready(function () {
       "X-Auth-Token": "f500a2871e0e423d9fe1ba869f73155e"
     }
   })
-    .then(resp => resp.json())
+    .then(function (response) {
+      return response.json();
+    })
     .then(function (data) {
       console.log(data);
       var { standings: [{ table: tableData }] } = data;
       var rowDataHTML = tableData.reduce(
-        (html, { team: { name }, playedGames, won, draw, lost, goalsFor, goalsAgainst, goalDifference, points }) =>
+        (html, { team: { crestUrl, name }, position, playedGames, won, draw, lost, goalsFor, goalsAgainst, goalDifference, points }) =>
           html += `<tr>
-        <td>${name}</td>
+        <td>${position}</td>
+        <td><img width="20" height="20" src="${crestUrl}"> ${name}</td>
         <td>${playedGames}</td>
         <td>${won}</td>
         <td>${draw}</td>
