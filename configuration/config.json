@@ -1,8 +1,13 @@
   {
   "development": {
       "username": "root",
+<<<<<<< HEAD
       "password": "WARNING",
       "database": "players_db",
+=======
+      "password": "root",
+      "database": "soccer_db",
+>>>>>>> a55522a4953ec1aafb9ac18bda0c149a5cb044da
       "host": "127.0.0.1",
       "dialect": "mysql"
   },
