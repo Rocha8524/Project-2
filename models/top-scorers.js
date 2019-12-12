@@ -11,13 +11,13 @@ $(function() {
         $players.append(
           "<li>Name: " +
             scorer.player.name +
-            ", Position: " +
+            "<ul> Position: " +
             scorer.player.position +
-            ", Nationality: " +
+            "</ul><ul> Nationality: " +
             scorer.player.nationality +
-            ", Goals: " +
+            " Goals: " +
             scorer.numberOfGoals +
-            "</li>"
+            "</ul></li>"
         );
       });
     }

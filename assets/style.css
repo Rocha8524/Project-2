@@ -1,6 +1,6 @@
-body {
-  background-color: black;
-  }
+body, html {
+  height: 100%;
+}
   
   .center {
   display: block;
@@ -53,6 +53,9 @@ background-size: cover;
 #table {
 color: white;
 font-weight: bold;
+font-family: 'Gupter', serif;
+font-size: 17px;
+padding: 5px;
 }
   
 tr {
@@ -64,3 +67,43 @@ color: ivory;
 font-size: 18px;
 border-bottom: 3px solid purple;
 }
+
+
+.bg2 {
+background-image: url("images/playersbackground.jpg");
+height: 100%; 
+background-position: center;
+background-repeat: repeat-y;
+background-size: cover;
+  }
+
+#players {
+color: black;
+font-family: 'Calistoga', cursive;
+}
+
+li {
+  padding: 15px;
+}
+
+#team-info {
+margin-left:auto;
+margin-right:auto;
+background-color: ivory;
+height: 100%; 
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+.bg3 {
+  background-color: white;
+  height: 100%; 
+  background-size: cover;
+  min-height:100%;
+  }
+
+.bg4 {
+background-color: black;
+}
+
