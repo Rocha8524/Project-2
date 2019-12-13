@@ -46,85 +46,85 @@ var commands = process.argv[2];
     }]).then(function (answer) {*/
 switch (commands) {
 
-case "liverpool":
-  liverpool();
-  break;
+  case "liverpool":
+    liverpool();
+    break;
 
-case "leicester":
-  leicesterCity();
-  break;
+  case "leicester":
+    leicesterCity();
+    break;
 
-case "man-city":
-  manCity();
-  break;
+  case "man-city":
+    manCity();
+    break;
 
-case "chelsea":
-  chelsea();
-  break;
+  case "chelsea":
+    chelsea();
+    break;
 
-case "man-utd":
-  manUtd();
-  break;
+  case "man-utd":
+    manUtd();
+    break;
 
-case "tottenham":
-  tottenham();
-  break;
+  case "tottenham":
+    tottenham();
+    break;
 
-case "wolves":
-  wolves();
-  break;
+  case "wolves":
+    wolves();
+    break;
 
-case "crystal-palace":
-  crystal();
-  break;
+  case "crystal-palace":
+    crystal();
+    break;
 
-case "sheffield":
-  sheffield();
-  break;
+  case "sheffield":
+    sheffield();
+    break;
 
-case "arsenal":
-  arsenal();
-  break;
+  case "arsenal":
+    arsenal();
+    break;
 
-case "newcastle":
-  newcastle();
-  break;
+  case "newcastle":
+    newcastle();
+    break;
 
-case "brighton":
-  brighton();
-  break;
+  case "brighton":
+    brighton();
+    break;
 
-case "burnley":
-  burnley();
-  break;
+  case "burnley":
+    burnley();
+    break;
 
-case "everton":
-  everton();
-  break;
+  case "everton":
+    everton();
+    break;
 
-case "bournemouth":
-  bournemouth();
-  break;
+  case "bournemouth":
+    bournemouth();
+    break;
 
-case "west-ham":
-  westHam();
-  break;
+  case "west-ham":
+    westHam();
+    break;
 
-case "aston-villa":
-  astonVilla();
-  break;
+  case "aston-villa":
+    astonVilla();
+    break;
 
-case "southampton":
-  southampton();
-  break;
+  case "southampton":
+    southampton();
+    break;
 
-case "norwich":
-  norwich();
-  break;
+  case "norwich":
+    norwich();
+    break;
 
-case "watford":
-  watford();
-  break;
+  case "watford":
+    watford();
+    break;
 }
 //});
 //};
@@ -309,21 +309,26 @@ function watford() {
   });
 }
 
-
-
-$(function () {
-
-  var $squad = $("#player-info");
-  $.ajax({
-    headers: { "X-Auth-Token": "f500a2871e0e423d9fe1ba869f73155e" },
-    type: "GET",
-    url: "https://api.football-data.org/v2/teams/64/squad",
-    dataType: "json",
-    success: function (response) {
-      $.each(response.squad, function (i, player) {
-        $squad.append("<li>name: " + player.name + ", position: " + player.position + ", nationality: " + player.nationality + "</li>"
-        );
-      });
-    }
+// Liverpool
+$(document).ready(function () {
+  $(function () {
+    var $squad = $("#squad-info");
+    $.ajax({
+      headers: { "X-Auth-Token": "f500a2871e0e423d9fe1ba869f73155e" },
+      type: "GET",
+      url: "https://api.football-data.org/v2/teams/64/",
+      dataType: "json",
+      success: function (response) {
+        console.log(response);
+        $.each(response.squad, function (i, player) {
+          $squad.append(
+            `<br><div class="text-center"><img width="50" height="50" src="${player.name}"></div><br>
+            <div class="center">${player.position} </div>
+            <div class="center">Founded: ${player.position}</div>
+            <div class="center">Stadium: ${player.nationality}</div>`
+          );
+        });
+      }
+    });
   });
 });
