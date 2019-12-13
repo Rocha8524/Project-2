@@ -1,10 +1,7 @@
 /* eslint-disable prettier/prettier */
-// Create variables that connect npm packages
-// var mysql = require("mysql");
-// var inquirer = require("inquirer");
 
-// Create the connection information for the sql database
-/* var connection = mysql.createConnection({
+/* Create the connection information for the sql database
+var connection = mysql.createConnection({
     host: "localhost",
 
     // Your port; if not 3306
@@ -20,6 +17,7 @@
     database: "players_db"
 });
 */
+
 // Include football data npm package
 var data = require("footballdata-api-v2");
 var FootballData = data.default;
@@ -37,6 +35,7 @@ connection.connect(function (error) {
 var commands = process.argv[2];
 //var userInput = process.argv.slice(3).join(" ");
 
+
 /*function teamInquirer() {
     inquirer.prompt([{
         name: "teams",
@@ -46,6 +45,7 @@ var commands = process.argv[2];
 
     }]).then(function (answer) {*/
 switch (commands) {
+
 case "liverpool":
   liverpool();
   break;
@@ -130,201 +130,200 @@ case "watford":
 //};
 
 function liverpool() {
-  footballData
-    .getTeam({
-      id: 64 // Liverpool
-    })
-    .then(function(data) {
-      console.log(JSON.stringify(data.squad, null, 4));
-    });
+
+  footballData.getTeam({
+    id: 64, // Liverpool
+  }).then(function (data) {
+    console.log(JSON.stringify(data.squad, null, 4));
+  });
 }
 
 function leicesterCity() {
-  footballData
-    .getTeam({
-      id: 338 // Liverpool
-    })
-    .then(function(data) {
-      console.log(JSON.stringify(data.squad, null, 4));
-    });
+
+  footballData.getTeam({
+    id: 338, // Liverpool
+  }).then(function (data) {
+    console.log(JSON.stringify(data.squad, null, 4));
+  });
 }
 
 function manCity() {
-  footballData
-    .getTeam({
-      id: 65 // Liverpool
-    })
-    .then(function(data) {
-      console.log(JSON.stringify(data.squad, null, 4));
-    });
+
+  footballData.getTeam({
+    id: 65, // Liverpool
+  }).then(function (data) {
+    console.log(JSON.stringify(data.squad, null, 4));
+  });
 }
 
 function chelsea() {
-  footballData
-    .getTeam({
-      id: 61 // Liverpool
-    })
-    .then(function(data) {
-      console.log(JSON.stringify(data.squad, null, 4));
-    });
+
+  footballData.getTeam({
+    id: 61, // Liverpool
+  }).then(function (data) {
+    console.log(JSON.stringify(data.squad, null, 4));
+  });
 }
 
 function manUtd() {
-  footballData
-    .getTeam({
-      id: 66 // Liverpool
-    })
-    .then(function(data) {
-      console.log(JSON.stringify(data.squad, null, 4));
-    });
+
+  footballData.getTeam({
+    id: 66, // Liverpool
+  }).then(function (data) {
+    console.log(JSON.stringify(data.squad, null, 4));
+  });
 }
 
 function tottenham() {
-  footballData
-    .getTeam({
-      id: 73 // Liverpool
-    })
-    .then(function(data) {
-      console.log(JSON.stringify(data.squad, null, 4));
-    });
+
+  footballData.getTeam({
+    id: 73, // Liverpool
+  }).then(function (data) {
+    console.log(JSON.stringify(data.squad, null, 4));
+  });
 }
 
 function wolves() {
-  footballData
-    .getTeam({
-      id: 76 // Liverpool
-    })
-    .then(function(data) {
-      console.log(JSON.stringify(data.squad, null, 4));
-    });
+
+  footballData.getTeam({
+    id: 76, // Liverpool
+  }).then(function (data) {
+    console.log(JSON.stringify(data.squad, null, 4));
+  });
 }
 
 function crystal() {
-  footballData
-    .getTeam({
-      id: 354 // Liverpool
-    })
-    .then(function(data) {
-      console.log(JSON.stringify(data.squad, null, 4));
-    });
+
+  footballData.getTeam({
+    id: 354, // Liverpool
+  }).then(function (data) {
+    console.log(JSON.stringify(data.squad, null, 4));
+  });
 }
 
 function sheffield() {
-  footballData
-    .getTeam({
-      id: 356 // Liverpool
-    })
-    .then(function(data) {
-      console.log(JSON.stringify(data.squad, null, 4));
-    });
+
+  footballData.getTeam({
+    id: 356, // Liverpool
+  }).then(function (data) {
+    console.log(JSON.stringify(data.squad, null, 4));
+  });
 }
 
 function arsenal() {
-  footballData
-    .getTeam({
-      id: 57 // Liverpool
-    })
-    .then(function(data) {
-      console.log(JSON.stringify(data.squad, null, 4));
-    });
+
+  footballData.getTeam({
+    id: 57, // Liverpool
+  }).then(function (data) {
+    console.log(JSON.stringify(data.squad, null, 4));
+  });
 }
 
 function newcastle() {
-  footballData
-    .getTeam({
-      id: 67 // Liverpool
-    })
-    .then(function(data) {
-      console.log(JSON.stringify(data.squad, null, 4));
-    });
+
+  footballData.getTeam({
+    id: 67, // Liverpool
+  }).then(function (data) {
+    console.log(JSON.stringify(data.squad, null, 4));
+  });
 }
 
 function brighton() {
-  footballData
-    .getTeam({
-      id: 397 // Liverpool
-    })
-    .then(function(data) {
-      console.log(JSON.stringify(data.squad, null, 4));
-    });
+
+  footballData.getTeam({
+    id: 397, // Liverpool
+  }).then(function (data) {
+    console.log(JSON.stringify(data.squad, null, 4));
+  });
 }
 
 function burnley() {
-  footballData
-    .getTeam({
-      id: 328 // Liverpool
-    })
-    .then(function(data) {
-      console.log(JSON.stringify(data.squad, null, 4));
-    });
+
+  footballData.getTeam({
+    id: 328, // Liverpool
+  }).then(function (data) {
+    console.log(JSON.stringify(data.squad, null, 4));
+  });
 }
 
 function everton() {
-  footballData
-    .getTeam({
-      id: 62 // Liverpool
-    })
-    .then(function(data) {
-      console.log(JSON.stringify(data.squad, null, 4));
-    });
+
+  footballData.getTeam({
+    id: 62, // Liverpool
+  }).then(function (data) {
+    console.log(JSON.stringify(data.squad, null, 4));
+  });
 }
 
 function bournemouth() {
-  footballData
-    .getTeam({
-      id: 1044 // Liverpool
-    })
-    .then(function(data) {
-      console.log(JSON.stringify(data.squad, null, 4));
-    });
+
+  footballData.getTeam({
+    id: 1044, // Liverpool
+  }).then(function (data) {
+    console.log(JSON.stringify(data.squad, null, 4));
+  });
 }
 
 function westHam() {
-  footballData
-    .getTeam({
-      id: 563 // Liverpool
-    })
-    .then(function(data) {
-      console.log(JSON.stringify(data.squad, null, 4));
-    });
+
+  footballData.getTeam({
+    id: 563, // Liverpool
+  }).then(function (data) {
+    console.log(JSON.stringify(data.squad, null, 4));
+  });
 }
 
 function astonVilla() {
-  footballData
-    .getTeam({
-      id: 58 // Liverpool
-    })
-    .then(function(data) {
-      console.log(JSON.stringify(data.squad, null, 4));
-    });
+
+  footballData.getTeam({
+    id: 58, // Liverpool
+  }).then(function (data) {
+    console.log(JSON.stringify(data.squad, null, 4));
+  });
 }
 
 function southampton() {
-  footballData
-    .getTeam({
-      id: 340 // Liverpool
-    })
-    .then(function(data) {
-      console.log(JSON.stringify(data.squad, null, 4));
-    });
+
+  footballData.getTeam({
+    id: 340, // Liverpool
+  }).then(function (data) {
+    console.log(JSON.stringify(data.squad, null, 4));
+  });
 }
 
 function norwich() {
-  footballData
-    .getTeam({
-      id: 68 // Liverpool
-    })
-    .then(function(data) {
-      console.log(JSON.stringify(data.squad, null, 4));
-    });
+
+  footballData.getTeam({
+    id: 68, // Liverpool
+  }).then(function (data) {
+    console.log(JSON.stringify(data.squad, null, 4));
+  });
 }
 
 function watford() {
-  footballData
-    .getTeam({
-      id: 346 // Liverpool
-    })
-    .then(function(data) {
-      console.log(JSON.stringify(data.squad, null, 4));
-    });
+
+  footballData.getTeam({
+    id: 346, // Liverpool
+  }).then(function (data) {
+    console.log(JSON.stringify(data.squad, null, 4));
+  });
 }
+
+
+
+$(function () {
+
+  var $squad = $("#player-info");
+  $.ajax({
+    headers: { "X-Auth-Token": "f500a2871e0e423d9fe1ba869f73155e" },
+    type: "GET",
+    url: "https://api.football-data.org/v2/teams/64/squad",
+    dataType: "json",
+    success: function (response) {
+      $.each(response.squad, function (i, player) {
+        $squad.append("<li>name: " + player.name + ", position: " + player.position + ", nationality: " + player.nationality + "</li>"
+        );
+      });
+    }
+  });
+});
