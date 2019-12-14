@@ -1,5 +1,3 @@
-var bestPlayers = require("../database/players");
-
 module.exports = function(app) {
   // Get all examples
   app.get("/api/players", function(request, response) {

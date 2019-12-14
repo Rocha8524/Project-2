@@ -1,4 +1,4 @@
-INSERT INTO players
+INSERT INTO players (player_name, image, position, dateOfBirth, nationality)
 
 VALUES
     ("Alisson", "https://tmssl.akamaized.net//images/foto/normal/alisson-fc-liverpool-1548766324-20182.jpg" , "Goalkeeper" , "1992-10-02" , "Brazil"),

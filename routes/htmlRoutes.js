@@ -1,12 +1,19 @@
 var db = require("../models");
 
 module.exports = function(app) {
-  // Load index page
-  app.get("/index", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.render("index", {
+  // Load index pages
+  app.get("/", function(req, res) {
+    res.render("index", {
+      msg: "Welcome!"
+    });
+  });
+
+  app.get("/players", function(req, res) {
+    db.Player.findAll({}).then(function(players) {
+      console.log(players);
+      res.render("players", {
         msg: "Welcome!",
-        examples: dbExamples
+        players: players
       });
     });
   });
