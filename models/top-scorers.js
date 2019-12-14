@@ -9,11 +9,12 @@ $(function() {
       console.log(response);
       $.each(response.scorers, function(i, scorer) {
         $players.append(
-          "<li>Name: " +
+          "<li><ul>Name: " +
             scorer.player.name +
+            "</ul>" +
             "<ul> Position: " +
             scorer.player.position +
-            "</ul><ul> Nationality: " +
+            "</ul> Nationality: " +
             scorer.player.nationality +
             " Goals: " +
             scorer.numberOfGoals +
