@@ -320,7 +320,7 @@ $(document).ready(function () {
       dataType: "json",
       success: function (response) {
         console.log(response);
-        $.each(response.squad, function (i, player) {
+        $.each(response.teams[64], function (i, player) {
           $squad.append(
             `<br><div class="text-center"><img width="50" height="50" src="${player.name}"></div><br>
             <div class="center">${player.position} </div>
