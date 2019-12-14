@@ -18,18 +18,18 @@ body, html {
   }
   
   #table {
-  color: white;
+  color: gray;
   font-weight: bold;
   }
     
   tr {
-  border-bottom: 1px solid purple;
+  border-bottom: 1px solid gray;
   }
   
   th {
   color: ivory;
   font-size: 18px;
-  border-bottom: 3px solid purple;
+  border-bottom: 3px solid gray;
   }
 
 background-color: black;
@@ -43,7 +43,7 @@ width: 50%;
 }
 
 .bg {
-background-image: url("images/eplbackground2.jpg");
+background-image: url("images/matchbackground.jpg");
 height: 100%; 
 background-position: center;
 background-repeat: no-repeat;
@@ -59,13 +59,13 @@ padding: 5px;
 }
   
 tr {
-border-bottom: 1px solid purple;
+border-bottom: 1px solid gray;
 }
 
 th {
 color: ivory;
 font-size: 18px;
-border-bottom: 3px solid purple;
+border-bottom: 3px solid gray;
 }
 
 
@@ -107,3 +107,18 @@ background-size: cover;
 background-color: black;
 }
 
+.navlink {
+  margin-left:auto;
+  margin-right: auto;
+  width: 100%;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: flex; 
+  justify-content: center
+}
+
+body {
+  background-image: url("assets/images/matchbackground.jpg");
+  background-position: center top;
+  background-size: 100% auto;
+}

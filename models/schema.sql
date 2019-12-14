@@ -1,3 +1,7 @@
+
+DROP DATABASE IF EXISTS teamdb;
+CREATE DATABASE teamdb;
+
 DROP DATABASE IF EXISTS players_db;
 CREATE DATABASE players_db;
 
