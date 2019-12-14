@@ -46,85 +46,85 @@ var commands = process.argv[2];
     }]).then(function (answer) {*/
 switch (commands) {
 
-  case "liverpool":
-    liverpool();
-    break;
+case "liverpool":
+  liverpool();
+  break;
 
-  case "leicester":
-    leicesterCity();
-    break;
+case "leicester":
+  leicesterCity();
+  break;
 
-  case "man-city":
-    manCity();
-    break;
+case "man-city":
+  manCity();
+  break;
 
-  case "chelsea":
-    chelsea();
-    break;
+case "chelsea":
+  chelsea();
+  break;
 
-  case "man-utd":
-    manUtd();
-    break;
+case "man-utd":
+  manUtd();
+  break;
 
-  case "tottenham":
-    tottenham();
-    break;
+case "tottenham":
+  tottenham();
+  break;
 
-  case "wolves":
-    wolves();
-    break;
+case "wolves":
+  wolves();
+  break;
 
-  case "crystal-palace":
-    crystal();
-    break;
+case "crystal-palace":
+  crystal();
+  break;
 
-  case "sheffield":
-    sheffield();
-    break;
+case "sheffield":
+  sheffield();
+  break;
 
-  case "arsenal":
-    arsenal();
-    break;
+case "arsenal":
+  arsenal();
+  break;
 
-  case "newcastle":
-    newcastle();
-    break;
+case "newcastle":
+  newcastle();
+  break;
 
-  case "brighton":
-    brighton();
-    break;
+case "brighton":
+  brighton();
+  break;
 
-  case "burnley":
-    burnley();
-    break;
+case "burnley":
+  burnley();
+  break;
 
-  case "everton":
-    everton();
-    break;
+case "everton":
+  everton();
+  break;
 
-  case "bournemouth":
-    bournemouth();
-    break;
+case "bournemouth":
+  bournemouth();
+  break;
 
-  case "west-ham":
-    westHam();
-    break;
+case "west-ham":
+  westHam();
+  break;
 
-  case "aston-villa":
-    astonVilla();
-    break;
+case "aston-villa":
+  astonVilla();
+  break;
 
-  case "southampton":
-    southampton();
-    break;
+case "southampton":
+  southampton();
+  break;
 
-  case "norwich":
-    norwich();
-    break;
+case "norwich":
+  norwich();
+  break;
 
-  case "watford":
-    watford();
-    break;
+case "watford":
+  watford();
+  break;
 }
 //});
 //};
@@ -309,7 +309,7 @@ function watford() {
   });
 }
 
-// Liverpool
+/* Liverpool
 $(document).ready(function () {
   $(function () {
     var $squad = $("#squad-info");
@@ -332,3 +332,4 @@ $(document).ready(function () {
     });
   });
 });
+*/
