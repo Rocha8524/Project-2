@@ -1,17 +1,17 @@
-var db = require("../models");
+var bestPlayers = require("../database/best-players");
 
-module.exports = function(app) {
+module.exports = function (app) {
   // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+  app.get("/api/best-players", function (request, response) {
+    db.Example.findAll({}).then(function (dbExamples) {
+      response.json(bestPlayers);
     });
   });
 
   // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+  app.post("/api/best-players", function (request, response) {
+    db.Example.create(req.body).then(function (dbExample) {
+      response.json(dbExample);
     });
   });
 };
