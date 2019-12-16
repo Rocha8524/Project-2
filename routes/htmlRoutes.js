@@ -1,32 +1,34 @@
-var db = require("../models");
+var path = require("path");
 
 module.exports = function(app) {
   // Load index pages
   app.get("/", function(req, res) {
-    res.render("index", {
-      msg: "Welcome!"
-    });
+    res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
-  app.get("/players", function(req, res) {
-    db.Player.findAll({}).then(function(players) {
-      console.log(players);
-      res.render("players", {
-        msg: "Welcome!",
-        players: players
-      });
-    });
+  // cms route loads cms.html
+  app.get("/cms", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/standings.html"));
   });
 
-  // Load example page and pass in an example by id
-  app.get("/example/:id", function(request, response) {
-    db.Example.findOne({ where: { id: request.params.id } }).then(function(
-      dataExample
-    ) {
-      response.render("example", {
-        example: dataExample
-      });
-    });
+  // blog route loads blog.html
+  app.get("/blog", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/football.html"));
+  });
+
+  // cms route loads cms.html
+  app.get("/cms", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/team-info.html"));
+  });
+
+  // blog route loads blog.html
+  app.get("/blog", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/top-scorers.html"));
+  });
+
+  // blog route loads blog.html
+  app.get("/blog", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/players.html"));
   });
 
   // Render 404 page for any unmatched routes
