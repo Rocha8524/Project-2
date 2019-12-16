@@ -4,7 +4,7 @@ module.exports = function (sequelize, DataTypes) {
     image: DataTypes.STRING,
     position: DataTypes.STRING,
     dateOfBirth: DataTypes.STRING,
-    nationality: DataTypes.STRING,
+    nationality: DataTypes.STRING
   });
   return Player;
 };
