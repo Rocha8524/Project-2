@@ -1,7 +1,6 @@
 var path = require("path");
 
 module.exports = function(app) {
-  
   // Load index pages
   app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
@@ -10,7 +9,6 @@ module.exports = function(app) {
   // cms route loads cms.html
   app.get("/cms", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/standings.html"));
-
   });
 
   // blog route loads blog.html
