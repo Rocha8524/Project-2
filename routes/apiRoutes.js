@@ -1,9 +1,9 @@
 var bestPlayers = require("../database/best-players");
 
-module.exports = function (app) {
+module.exports = function(app) {
   // Get all examples
-  app.get("/api/best-players", function (request, response) {
-    db.Example.findAll({}).then(function (dbExamples) {
+  app.get("/api/players", function(request, response) {
+    db.Example.findAll({}).then(function(dbExample) {
       response.json(bestPlayers);
     });
   });
