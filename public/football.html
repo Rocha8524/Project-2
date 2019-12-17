@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="/public/css/style.css">
   <title>Soccer Hooligans 365 Football Teams</title>
 </head>
 
@@ -23,7 +23,7 @@
 <body data-spy="scroll" data-target=".scrollspy">
   <!-- Static navbar-->
   <nav class="navbar navbar-expand navbar-dark bg-dark">
-    <img src="assets/images/epl.png" alt="epl" width="70" height="80">
+    <img src="/public/images/epl.png" alt="epl" width="70" height="80">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02"
       aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -34,8 +34,8 @@
         <li class="nav-item">
           <a class="nav-link" href="football.html">Football</a>
         </li>
-        <li class="nav-item active" ng-controller="userInfoController" ng-show="showDash">
-          <a class="nav-link" href="standings.html">Standings<span class="sr-only">(current)</span></a>
+        <li class="nav-item" ng-controller="userInfoController" ng-show="showDash">
+          <a class="nav-link" href="standings.html">Standings</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="team-info.html">Team Information</a>
