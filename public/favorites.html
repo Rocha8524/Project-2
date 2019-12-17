@@ -12,17 +12,49 @@
   <title>Soccer Hooligans 365 Favorites</title>
 </head>
 
-<body>
-  <div class="w3-bar w3-red">
-    <a href="standings.html" class="w3-bar-item w3-button">Standings</a>
-    <a href="football.html" class="w3-bar-item w3-button">Football</a>
-    <a href="favorites.html" class="w3-bar-item w3-button"><strong>Favorites</strong></a>
-  </div>
+<style>
+  body {
+      background-image: url(http://2d.by/wallpapers/p/pered_matchem.jpg);
+      background-position: center top;
+      background-size: 100% auto;
+  }
+</style>
 
+<body data-spy="scroll" data-target=".scrollspy">
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <img src="assets/images/epl.png" alt="epl" width="70" height="80">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02"
+      aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <div class="collapse navbar-collapse navlink" id="navbarsExample02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="football.html">Football</a>
+        </li>
+        <li class="nav-item active" ng-controller="userInfoController" ng-show="showDash">
+          <a class="nav-link" href="standings.html">Standings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="team-info.html">Team Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="top-scorers.html">Top Scorers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="favorites.html"><span class="sr-only">(current)</span>Favorites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/views/players.ejs">Players</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
