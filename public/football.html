@@ -17,41 +17,47 @@
 
 
 <style>
- 
+
 </style>
 
 <body data-spy="scroll" data-target=".scrollspy">
-    <!-- Static navbar-->
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
-        <img src="assets/images/epl.png" alt="epl" width="70" height="80">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02"
-        aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse navlink" id="navbarsExample02">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="football.html">Football<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item" ng-controller="userInfoController" ng-show="showDash">
-            <a class="nav-link" href="standings.html">Standings</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="team-info.html">Team Information</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="top-scorers.html">Top Scorers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="favorites.html">Favorites</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <!-- Static navbar-->
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <img src="assets/images/epl.png" alt="epl" width="70" height="80">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02"
+      aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse navlink" id="navbarsExample02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="football.html">Football</a>
+        </li>
+        <li class="nav-item active" ng-controller="userInfoController" ng-show="showDash">
+          <a class="nav-link" href="standings.html">Standings<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="team-info.html">Team Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="top-scorers.html">Top Scorers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="favorites.html">Favorites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/views/players.ejs">Players</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
 
-<div class="taggbox-container" style=" width:75%;height:100%;overflow: auto;"><script defer src="//web.taggbox.com/app/js/embed.min.js" type="text/javascript"></script><div class="taggbox-socialwall" data-wall-id="28167" view-url="https://taggbox.com/w/28167"></div></div>
+  <div class="taggbox-container" style=" width:75%;height:100%;overflow: auto;">
+    <script defer src="//web.taggbox.com/app/js/embed.min.js" type="text/javascript"></script>
+    <div class="taggbox-socialwall" data-wall-id="28167" view-url="https://taggbox.com/w/28167"></div>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>

@@ -12,6 +12,50 @@
     <link rel="stylesheet" href="assets/style.css">
     <title>Team Information</title>
 </head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+<style>
+    body {
+        background-image: url(http://2d.by/wallpapers/p/pered_matchem.jpg);
+        background-position: center top;
+        background-size: 100% auto;
+    }
+</style>
+
+<body data-spy="scroll" data-target=".scrollspy">
+    <!-- Static navbar-->
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <img src="assets/images/epl.png" alt="epl" width="70" height="80">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02"
+            aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse navlink" id="navbarsExample02">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="football.html">Football</a>
+              </li>
+              <li class="nav-item active" ng-controller="userInfoController" ng-show="showDash">
+                <a class="nav-link" href="standings.html">Standings<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="team-info.html">Team Information</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="top-scorers.html">Top Scorers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="favorites.html">Favorites</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/views/players.ejs">Players</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
 
 <body>
     <body data-spy="scroll" data-target=".scrollspy">
@@ -42,6 +86,9 @@
             </ul>
           </div>
         </nav>
+
+    <div class="bg3">
+
         <table class="text-center" id="team-info"></table>
     </div>
 
@@ -49,4 +96,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="./models/team-info.js"></script>
 </body>
-</html>
+
