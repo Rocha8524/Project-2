@@ -15,10 +15,8 @@ $(document).ready(function () {
             <div class="center">Founded: ${team.founded}</div>
             <div class="center">Stadium: ${team.venue}</div>
             <div class="center">Website: <a href="${team.website}" target="_blank">${team.website}</a></div>
-            <div class="center">Address: ${team.address}</div>
-            <div class="card-action right-align">
-            <a class="waves-effect waves-light btn red" onclick="deleteTeamListener(${team.id})"><i class="material-icons right"></i>Click for Favorite</a>
-            </div><hr>
+            <div class="center">Address: ${team.address}</div><br>
+            <hr>
         </div>
         </div>`
           );

@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 module.exports = function(sequelize, DataTypes) {
   var Player = sequelize.define("Player", {
     player_name: DataTypes.STRING,
@@ -9,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
   return Player;
 };
 
-function bestPlayers() {
+/*function bestPlayers() {
   // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
   $.ajax({ url: "/api/tables", method: "GET" }).then(function(tableData) {
     // Here we then log the tableData to console, where it will show up as an object.
@@ -36,5 +37,7 @@ function bestPlayers() {
       tableList.append(listItem);
     }
   });
-  bestPlayers();
 }
+
+bestPlayers();
+*/

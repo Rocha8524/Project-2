@@ -1,6 +1,5 @@
 require("dotenv").config();
 var express = require("express");
-var ejs = require("ejs");
 
 var db = require("./models");
 
