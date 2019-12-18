@@ -42,9 +42,6 @@ body {
   border-bottom: 3px solid gray;
   }
 
-background-color: black;
-}
-
 .center {
 display: block;
 margin-left: auto;
@@ -64,7 +61,7 @@ background-size: cover;
 color: white;
 font-weight: bold;
 font-family: 'Gupter', serif;
-font-size: 17px;
+font-size: 15px;
 padding: 5px;
 border: 3px solid gray;
 }
@@ -88,13 +85,9 @@ background-repeat: repeat-y;
 background-size: cover;
   }
 
-#players {
-color: black;
-font-family: 'Calistoga', cursive;
-}
 
 li {
-  padding: 15px;
+margin-bottom: 20px;
 }
 
 #team-info {
@@ -132,4 +125,18 @@ background-size: cover;
   text-transform: uppercase;
   display: flex; 
   justify-content: center
+}
+
+#players {
+  margin-left:auto;
+  margin-right:auto;
+  height: 100%; 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  border: 3px solid darkgray;
+  border-bottom: 3px solid darkgray;  
+  font-family: 'Calistoga', cursive;
+  font-size: 15px;
 }

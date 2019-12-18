@@ -9,15 +9,15 @@ $(function() {
       console.log(response);
       $.each(response.scorers, function(i, scorer) {
         $players.append(
-          "<li>Name: " +
+          "<ol>Name: " +
             scorer.player.name +
-            "<ul> Position: " +
+            "<tr> | Position: " +
             scorer.player.position +
-            "</ul><ul> Nationality: " +
+            "<th> | Nationality: " +
             scorer.player.nationality +
-            " Goals: " +
+            "<th> | Goals: " +
             scorer.numberOfGoals +
-            "</ul></li>"
+            "</ol>"
         );
       });
     }
