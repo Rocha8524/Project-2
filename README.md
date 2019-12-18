@@ -13,8 +13,8 @@ This is a soccer based application that pulls information from Football Data.  U
 ##To Install
 run NPM Install
 
-##Heroku Link
+## Heroku Link
 https://stormy-shore-95777.herokuapp.com/ 
 
-##Future Enhancements
+## Future Enhancements
 We will try to bring in more leagues such as Li Liga and MLS. We also want to have users able to add to our database table and be able to add their favorite players.
