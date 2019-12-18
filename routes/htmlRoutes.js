@@ -6,28 +6,23 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
-  // cms route loads cms.html
-  app.get("/cms", function(req, res) {
+  app.get("/standings", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/standings.html"));
   });
 
-  // blog route loads blog.html
-  app.get("/blog", function(req, res) {
+  app.get("/football", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/football.html"));
   });
 
-  // cms route loads cms.html
-  app.get("/cms", function(req, res) {
+  app.get("/team-info", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/team-info.html"));
   });
 
-  // blog route loads blog.html
-  app.get("/blog", function(req, res) {
+  app.get("/top-scorers", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/top-scorers.html"));
   });
 
-  // blog route loads blog.html
-  app.get("/blog", function(req, res) {
+  app.get("/bplayers", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/players.html"));
   });
 
