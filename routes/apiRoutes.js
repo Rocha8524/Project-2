@@ -1,6 +1,3 @@
-// Create variables for dependencies
-var express = require("express");
-var router = express.Router();
 var database = require("../models");
 
 module.exports = function(app) {
@@ -18,6 +15,3 @@ module.exports = function(app) {
     });
   });
 };
-
-// Export routes for server.js to use.
-module.exports = router;
