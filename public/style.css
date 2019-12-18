@@ -1,8 +1,14 @@
 body, html {
   height: 100%;
 }
-  
-  .center {
+
+body {
+  background-image: url("images/matchbackground.jpg");
+  background-position: center top;
+  background-size: 100% auto;
+}
+
+.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -18,18 +24,22 @@ body, html {
   }
   
   #table {
-  color: white;
+  color: gray;
   font-weight: bold;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
   }
     
   tr {
-  border-bottom: 1px solid purple;
+  border-bottom: 1px solid gray;
   }
   
   th {
-  color: ivory;
+  color: white;
   font-size: 18px;
-  border-bottom: 3px solid purple;
+  border-bottom: 3px solid gray;
   }
 
 background-color: black;
@@ -43,7 +53,7 @@ width: 50%;
 }
 
 .bg {
-background-image: url("images/eplbackground2.jpg");
+background-image: url("images/matchbackground.jpg");
 height: 100%; 
 background-position: center;
 background-repeat: no-repeat;
@@ -56,16 +66,17 @@ font-weight: bold;
 font-family: 'Gupter', serif;
 font-size: 17px;
 padding: 5px;
+border: 3px solid gray;
 }
   
 tr {
-border-bottom: 1px solid purple;
+border-bottom: 1px solid gray;
 }
 
 th {
-color: ivory;
+color: darkgray;
 font-size: 18px;
-border-bottom: 3px solid purple;
+border-bottom: 3px solid gray;
 }
 
 
@@ -89,11 +100,13 @@ li {
 #team-info {
 margin-left:auto;
 margin-right:auto;
-background-color: ivory;
 height: 100%; 
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
+color: white;
+border: 3px solid darkgray;
+border-bottom: 3px solid darkgray;
 }
 
 .bg3 {
@@ -105,8 +118,18 @@ background-size: cover;
 
 .bg4 {
 background-color: black;
+height: 100%; 
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 5c66057644319b8f9626ae8d0945fb2133ddfaa5
+.navlink {
+  margin-left:auto;
+  margin-right: auto;
+  width: 100%;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: flex; 
+  justify-content: center
+}
