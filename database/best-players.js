@@ -167,7 +167,15 @@ var players = [
   }
 ];
 
-module.exports = players;
+var tr;
+for (var i = 0; i < players.length; i++) {
+  tr = $("<tr/>");
+  tr.append("<td>" + players[i].name + "</td>");
+  tr.append("<td>" + players[i].position + "</td>");
+  tr.append("<td>" + players[i].birthday + "</td>");
+  tr.append("<td>" + players[i].nationality + "</td>");
+  $("table").append(tr);
+}
 /*
 var dom = {
   $data: $("#data"),
