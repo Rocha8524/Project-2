@@ -8,7 +8,7 @@ id Int (50) AUTO_INCREMENT NOT NULL,
 player_name VARCHAR (100) NOT NULL,
 image VARCHAR (1000) NOT NULL,
 position VARCHAR (100) NOT NULL,
-dateOfBirth VARCHAR (50) NOT NULL,
+birthday VARCHAR (50) NOT NULL,
 nationality VARCHAR (100) NOT NULL,
 PRIMARY KEY (id)
 );

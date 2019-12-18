@@ -1,4 +1,5 @@
-module.exports = function (sequelize, DataTypes) {
+/* eslint-disable camelcase */
+module.exports = function(sequelize, DataTypes) {
   var Player = sequelize.define("Player", {
     player_name: DataTypes.STRING,
     image: DataTypes.STRING,

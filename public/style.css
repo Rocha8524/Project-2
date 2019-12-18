@@ -1,14 +1,9 @@
 body, html {
   height: 100%;
+  background-color: black;
 }
-
-body {
-  background-image: url("images/matchbackground.jpg");
-  background-position: center top;
-  background-size: 100% auto;
-}
-
-.center {
+  
+  .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -26,10 +21,6 @@ body {
   #table {
   color: gray;
   font-weight: bold;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
   }
     
   tr {
@@ -37,13 +28,10 @@ body {
   }
   
   th {
-  color: white;
+  color: ivory;
   font-size: 18px;
   border-bottom: 3px solid gray;
   }
-
-background-color: black;
-}
 
 .center {
 display: block;
@@ -66,7 +54,6 @@ font-weight: bold;
 font-family: 'Gupter', serif;
 font-size: 17px;
 padding: 5px;
-border: 3px solid gray;
 }
   
 tr {
@@ -74,7 +61,7 @@ border-bottom: 1px solid gray;
 }
 
 th {
-color: darkgray;
+color: ivory;
 font-size: 18px;
 border-bottom: 3px solid gray;
 }
@@ -100,13 +87,11 @@ li {
 #team-info {
 margin-left:auto;
 margin-right:auto;
+background-color: ivory;
 height: 100%; 
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-color: white;
-border: 3px solid darkgray;
-border-bottom: 3px solid darkgray;
 }
 
 .bg3 {
@@ -118,10 +103,6 @@ border-bottom: 3px solid darkgray;
 
 .bg4 {
 background-color: black;
-height: 100%; 
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
 }
 
 .navlink {
@@ -132,4 +113,10 @@ background-size: cover;
   text-transform: uppercase;
   display: flex; 
   justify-content: center
+}
+
+body {
+  background-image: url("assets/images/matchbackground.jpg");
+  background-position: center top;
+  background-size: 100% auto;
 }
