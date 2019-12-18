@@ -134,17 +134,32 @@ function liverpool() {
     .getTeam({
       id: 64 // Liverpool
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(JSON.stringify(data.squad, null, 4));
+
+      for (var i = 0; i < data.squad.length; i++) {
+
+        var liverpoolSquad = $("#liverpool");
+
+        liverpoolTeam.append(
+          $("<hr>"),
+          $("<h2>").text("Name: " + data.squad.name),
+          $("<h2>").text("Position: " + data.squad.position),
+          $("<h2>").text("Nationality: " + data.squad.nationality),
+          $("<h2>").text("Date of birth: " + data.squad.dateOfBirth)
+        );
+        liverpoolSquad.append(liverpoolSquad);
+      }
     });
 }
+
 
 function leicesterCity() {
   footballData
     .getTeam({
       id: 338 // Liverpool
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(JSON.stringify(data.squad, null, 4));
     });
 }
@@ -154,7 +169,7 @@ function manCity() {
     .getTeam({
       id: 65 // Liverpool
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(JSON.stringify(data.squad, null, 4));
     });
 }
@@ -164,7 +179,7 @@ function chelsea() {
     .getTeam({
       id: 61 // Liverpool
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(JSON.stringify(data.squad, null, 4));
     });
 }
@@ -174,7 +189,7 @@ function manUtd() {
     .getTeam({
       id: 66 // Liverpool
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(JSON.stringify(data.squad, null, 4));
     });
 }
@@ -184,7 +199,7 @@ function tottenham() {
     .getTeam({
       id: 73 // Liverpool
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(JSON.stringify(data.squad, null, 4));
     });
 }
@@ -194,7 +209,7 @@ function wolves() {
     .getTeam({
       id: 76 // Liverpool
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(JSON.stringify(data.squad, null, 4));
     });
 }
@@ -204,7 +219,7 @@ function crystal() {
     .getTeam({
       id: 354 // Liverpool
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(JSON.stringify(data.squad, null, 4));
     });
 }
@@ -214,7 +229,7 @@ function sheffield() {
     .getTeam({
       id: 356 // Liverpool
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(JSON.stringify(data.squad, null, 4));
     });
 }
@@ -224,7 +239,7 @@ function arsenal() {
     .getTeam({
       id: 57 // Liverpool
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(JSON.stringify(data.squad, null, 4));
     });
 }
@@ -234,7 +249,7 @@ function newcastle() {
     .getTeam({
       id: 67 // Liverpool
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(JSON.stringify(data.squad, null, 4));
     });
 }
@@ -244,7 +259,7 @@ function brighton() {
     .getTeam({
       id: 397 // Liverpool
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(JSON.stringify(data.squad, null, 4));
     });
 }
@@ -254,7 +269,7 @@ function burnley() {
     .getTeam({
       id: 328 // Liverpool
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(JSON.stringify(data.squad, null, 4));
     });
 }
@@ -264,7 +279,7 @@ function everton() {
     .getTeam({
       id: 62 // Liverpool
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(JSON.stringify(data.squad, null, 4));
     });
 }
@@ -274,7 +289,7 @@ function bournemouth() {
     .getTeam({
       id: 1044 // Liverpool
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(JSON.stringify(data.squad, null, 4));
     });
 }
@@ -284,7 +299,7 @@ function westHam() {
     .getTeam({
       id: 563 // Liverpool
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(JSON.stringify(data.squad, null, 4));
     });
 }
@@ -294,7 +309,7 @@ function astonVilla() {
     .getTeam({
       id: 58 // Liverpool
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(JSON.stringify(data.squad, null, 4));
     });
 }
@@ -304,7 +319,7 @@ function southampton() {
     .getTeam({
       id: 340 // Liverpool
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(JSON.stringify(data.squad, null, 4));
     });
 }
@@ -314,7 +329,7 @@ function norwich() {
     .getTeam({
       id: 68 // Liverpool
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(JSON.stringify(data.squad, null, 4));
     });
 }
@@ -324,7 +339,7 @@ function watford() {
     .getTeam({
       id: 346 // Liverpool
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log(JSON.stringify(data.squad, null, 4));
     });
 }
