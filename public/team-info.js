@@ -26,8 +26,4 @@ $(document).ready(function () {
       }
     });
   });
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> 5c66057644319b8f9626ae8d0945fb2133ddfaa5

@@ -1,42 +1,20 @@
 {
-    "development": {
-        "username": "root",
-        "password": "WARNING",
-        "database": "players_db",
-        "host": "127.0.0.1",
-        "dialect": "mysql"
-    },
-    "test": {
-      "username": "root",
-<<<<<<< HEAD
-      "password": "WARNING",
-      "database": "players_db",
-      "host": "127.0.0.1",
-      "dialect": "mysql"
+  "development": {
+    "username": "root",
+    "password": "WARNING",
+    "database": "players_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": null,
-    "database": "testdb",
-    "host": "localhost",
-    "dialect": "mysql",
-    "logging": false
+    "password": "WARNING",
+    "database": "players_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
   },
   "production": {
-      "use_env_variable": "JAWSDB_URL",
-      "dialect": "mysql"
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
   }
 }
-=======
-      "password": null,
-      "database": "testdb",
-      "host": "localhost",
-      "dialect": "mysql",
-      "logging": false
-    },
-    "production": {
-        "use_env_variable": "JAWSDB_URL",
-        "dialect": "mysql"
-    }
-  }
->>>>>>> 5c66057644319b8f9626ae8d0945fb2133ddfaa5
