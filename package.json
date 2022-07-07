@@ -15,7 +15,7 @@
     "football-data-v2": "^1.0.2",
     "footballdata-api-v2": "^2.3.0",
     "inquirer": "^7.0.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "mysql": "^2.17.1",
     "mysql2": "^2.0.1",
     "node-football-api": "^1.0.2",
